@@ -41,12 +41,12 @@ nav, .header-bottom {
     position: relative;
 }
 
-.logo {
-    color: white;
+.text-logo {
+    color: #ffffff;
     font-size: 2rem;
 }
 
-.bt-sign-up {
+.button {
     padding: 0.7rem 2rem;
     background-color: #000000;
     color: white;
@@ -63,9 +63,33 @@ nav, .header-bottom {
     -o-transition: .3s;
 }
 
-.bt-sign-up:hover {
+.button:hover {
     background: #ffffff;
     color: #000000;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: top 0.3s, background-color 0.3s;
+    /* Animasi transisi untuk perubahan posisi dan warna latar */
+}
+
+.navbar-hidden {
+    top: -50px;
+}
+
+.navbar-scroll-down .homeButton {
+    color: black;
+    /* Warna teks tombol saat scroll ke bawah */
+}
+
+.navbar-scroll-up .homeButton {
+    color: white;
+    /* Warna teks tombol saat scroll ke atas */
 }
 
 .header-title {

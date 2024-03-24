@@ -15,11 +15,31 @@
     <script src="parallax.js/parallax.js"></script>
     <!-- HEADER -->
     <header class="parallax-window" data-parallax="scroll" data-image-src="images/space.jpg">
-        <nav>
-            <h1 class="logo">
+        <nav id="navbar" class="navbar-hidden">
+            <h1 class="text-logo">
                 <a href="/">adnannn.f</a>
             </h1>
-            <a href="" class="bt-sign-up">Sign Up</a>
+            <div>
+                <a id="homeButton" class="button">Home</a>
+                <a href="" class="button">About</a>
+                <a href="" class="button">Contact me</a>
+                <a href="" class="button">Sign in</a>
+            </div>
+
+            <!-- SCRIPT HOME -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $('#homeButton').on('click', function () {
+                        $('html, body').animate({
+                            scrollTop: 0 // Menggeser ke posisi paling atas
+                        }, 1000); // Durasi animasi dalam milidetik
+                    });
+                });
+            </script>
+            
+            <!-- SCRIPT HOME -->
+
         </nav>
         <div class="header-title">Adnan Faturrohman</div>
         <div class="header-title1">Junior Front-End Developer</div>
